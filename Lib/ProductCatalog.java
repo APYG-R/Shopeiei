@@ -5,7 +5,7 @@ import java.util.*;
 public class ProductCatalog {
     public ArrayList<Product> products = new ArrayList<>();
 
-    // Rep Invarainy (RI):
+    // Rep Invariant (RI):
     //  - ArrayList is not null and product must be unique.
     //
     // Abstraction Function (AF):
@@ -19,8 +19,10 @@ public class ProductCatalog {
             throw new RuntimeException("RI violated : products error make sure there are no null");
         }
         for(int i=0; i<products.size(); i++) {
-            if(products.get(i).equals(products.get(i+1))) {
-                throw new RuntimeException("RI violated : products error make sure there must be unique");
+            for(int j=i+1; j<products.size(); j++) {
+                if(products.get(i).equals(products.get(j))) {
+                    throw new RuntimeException("RI violated : products error make sure there must be unique");
+                }
             }
         }
     }

@@ -3,7 +3,7 @@ import Lib.*;
 
 public class DefaultPricingStrategy implements DiscountStrategy {
 
-    public double calculatePrice(CartItem item) {
+    public double calculateItemPrice(CartItem item) {
         return item.getProduct().getPrice() * item.getQuantity();
     }
 }

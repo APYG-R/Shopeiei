@@ -1,6 +1,5 @@
 package Lib;
 import java.util.ArrayList;
-import java.util.Map;
 import Discount.DefaultPricingStrategy;
 
 /**
@@ -37,13 +36,13 @@ public class PricingService {
      * @param item รายการสินค้าที่ต้องการคำนวณราคา
      * @return ราคาสุทธิหลังหักส่วนลด
      */
-    public double calculatePrice(CartItem item) {
+    public double calculateItemPrice(CartItem item) {
         String sku = item.getProduct().getProductId();
          for(StrategyRule rule : strategies) {
             if(rule.sku().equals(sku)) {
-                return rule.strategy().calculatePrice(item);
+                return rule.strategy().calculateItemPrice(item);
             }
         }
-        return defaultStrateg.calculatePrice(item);
+        return defaultStrateg.calculateItemPrice(item);
     }
 }

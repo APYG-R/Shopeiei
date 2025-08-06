@@ -7,7 +7,7 @@ public class CartItem {
     private final Product product;
     private int quantity;
 
-    // Rep Invarainy (RI):
+    // Rep Invariant (RI):
     //  - product is not null.
     //  - quantity > 0.
     //

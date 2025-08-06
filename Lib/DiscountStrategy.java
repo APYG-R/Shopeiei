@@ -1,5 +1,5 @@
 package Lib;
 
 public interface DiscountStrategy {
-    double calculatePrice(CartItem item);
+    double calculateItemPrice(CartItem item);
 }

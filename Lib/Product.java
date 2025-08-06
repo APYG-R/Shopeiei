@@ -1,5 +1,4 @@
 package Lib;
-import javax.management.RuntimeErrorException;
 
 /**
  * ADT ที่ไม่เปลี่ยนรูป (Immutable) สำหรับเก็บข้อมูลสินค้า
@@ -10,7 +9,7 @@ public final class Product {
     private final String productName;
     private final double price;
 
-    // Rep Invarainy (RI):
+    // Rep Invariant (RI):
     //  - productId and productName are not null or blank.
     //  - price >= 0.
     //
