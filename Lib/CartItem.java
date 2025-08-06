@@ -11,9 +11,8 @@ public class CartItem {
     //  - product is not null.
     //  - quantity > 0.
     //
-    // Abstraction Dunction (AF):
-    //  -AF(product, quantity) = An item in a shopping cart for
-    //  with the specified 'quantity'.
+    // Abstraction Function (AF):
+    //  - AF(product, quantity) = An item in a shopping cart for the specified product with the specified 'quantity'.
 
     /**
      * ตรวจสอบว่า Rep Invariant เป็นจริงหรือไม่

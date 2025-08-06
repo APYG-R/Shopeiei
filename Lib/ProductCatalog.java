@@ -8,8 +8,8 @@ public class ProductCatalog {
     // Rep Invarainy (RI):
     //  - ArrayList is not null and product must be unique.
     //
-    // Abstraction Dunction (AF):
-    //  -AF(products) = A catalog of all available products.
+    // Abstraction Function (AF):
+    //  - AF(products) = A catalog of all available products.
 
     /**
      * ตรวจสอบว่า Rep Invariant เป็นจริงหรือไม่

@@ -14,8 +14,8 @@ public final class Product {
     //  - productId and productName are not null or blank.
     //  - price >= 0.
     //
-    // Abstraction Dunction (AF):
-    //  -AF(productId, productName, price) = A product with the
+    // Abstraction Function (AF):
+    //  - AF(productId, productName, price) = A product with the given ID, name, and price.
 
     /**
      * ตรวจสอบว่า Rep Invariant เป็นจริงหรือไม่
