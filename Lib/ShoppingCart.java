@@ -11,7 +11,7 @@ public class ShoppingCart {
     //  - ArrayList is not null and cartItems must be unique.
     //
     // Abstraction Function (AF):
-    //  - AF(cartItems) = A catalog of all items in the shopping cart.
+    //  - AF(cartItems) = A shopping cart containing items, each represented by a CartItem.
 
     /**
      * ตรวจสอบว่า Rep Invariant เป็นจริงหรือไม่
@@ -97,3 +97,4 @@ public class ShoppingCart {
         checkRep();
     }
 }
+
