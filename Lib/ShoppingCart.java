@@ -68,6 +68,10 @@ public class ShoppingCart {
         checkRep();
     }
 
+    /**
+     * ลดจำนวนสินค้าที่มีอยู่ในตะกร้า
+     * @param sku รหัสสินค้าที่ต้องการลด
+     */
     public void removeItem(String sku) {
         CartItem toRemove = null;
         for (CartItem item : cartItems) {
@@ -97,4 +101,5 @@ public class ShoppingCart {
         checkRep();
     }
 }
+
 
